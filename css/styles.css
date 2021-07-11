@@ -1,0 +1,47 @@
+html, body {
+    height: 100vh
+}
+
+.container-fluid {
+    padding: 0em;
+}
+
+#header_background_img_container {
+    display: flex;
+    padding: 0em;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-image: url("../img/3dprintedEngineDarkenned.png");
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile_photo {
+    padding: 0em;
+    height: 20vh;
+    width: 20vh;
+    background-image: url("../img/free_profile_photo_cropped.jpeg");
+    border-radius: 50%;
+    margin-top: 15%;
+    background-size: cover;
+}
+
+#logo {
+    padding: 0em;
+    height: 20vh;
+    width: 33vw;
+    background-repeat: no-repeat;
+    background-image: url(../img/Mikes_Logo.svg);
+    margin-top: 0%;
+    background-size: cover;
+    
+}
+
+#content_area {
+    background-color: #EDE9DC;
+    background-repeat: no-repeat;
+    height: 100%;
+}
