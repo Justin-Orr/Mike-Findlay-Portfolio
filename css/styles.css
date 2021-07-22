@@ -74,13 +74,20 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+#project_list_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .project_tile {
+    display: block;
     position: relative;
     text-align: center;
     color: white;
     margin-bottom: 10%;
-    width: 100%;
-    height: 25vh;
+    width: 250px;
+    height: 150px;
     box-shadow: 3px 3px 10px gray;
     background-size: cover;
   }
@@ -94,6 +101,7 @@ body {
     padding-bottom: 21%;
     margin-bottom: 0%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 
     font-size: larger;
 
@@ -105,4 +113,23 @@ body {
   .project_tile_title:hover {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
   }
+
+  #top-of-page-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  #top-of-page-btn svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* Media Queries */
