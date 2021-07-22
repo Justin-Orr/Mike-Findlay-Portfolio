@@ -15,6 +15,31 @@
 
     <!-- Webpage Code -->
 
+    <!-- Side Navigation -->
+    <button type="button"  id="menu_btn" class="btn btn-outline-light" onclick="openNav()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </svg>
+    </button>
+
+    <div id="side_nav_container">
+      <div id="side_nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#my_projects_h1" onclick="closeNav()">Project 1 Name</a>
+        <a href="#p2" onclick="closeNav()">Project 2 Name</a>
+        <a href="#p3" onclick="closeNav()">Project 3 Name</a>
+        <a href="#p4" onclick="closeNav()">Project 4 Name</a>
+        <a href="#p5" onclick="closeNav()">Project 5 Name</a>
+        <a href="#p6" onclick="closeNav()">Project 6 Name</a>
+      </div>
+
+      <svg id="side_nav_shader" onclick="closeNav()">
+        <rect></rect>
+      </svg>
+
+    </div>
+    
+
     <!-- Header Content -->
     <div class="container-fluid">
       <!-- The header area -->
@@ -38,27 +63,27 @@
         <h1 id="my_projects_h1">My Projects</h1>
         
         <div id="project_list_container"> 
-          <div class="project_tile" style="background-image: url(../img/printer.jpg);">
+          <div id="p1" class="project_tile" style="background-image: url(../img/printer.jpg);">
             <p class="project_tile_title">Project 1</p>
           </div>
   
-          <div class="project_tile" style="background-image: url(../img/3d_boat.jpg);">
+          <div id="p2" class="project_tile" style="background-image: url(../img/3d_boat.jpg);">
             <p class="project_tile_title">Project 2</p>
           </div>
   
-          <div class="project_tile" style="background-image: url(../img/3dprintedEngine.jpg);">
+          <div id="p3" class="project_tile" style="background-image: url(../img/3dprintedEngine.jpg);">
             <p class="project_tile_title">Project 3</p>
           </div>
   
-          <div class="project_tile" style="background-image: url(../img/mechanical_engineer.jpg);">
+          <div id="p4" class="project_tile" style="background-image: url(../img/mechanical_engineer.jpg);">
             <p class="project_tile_title">Project 4</p>
           </div>
   
-          <div class="project_tile" style="background-image: url(../img/cad_file.jpg);">
+          <div id="p5" class="project_tile" style="background-image: url(../img/cad_file.jpg);">
             <p class="project_tile_title">Project 5</p>
           </div>
   
-          <div class="project_tile" style="background-image: url(../img/cad_file2.jpg);">
+          <div id="p6" class="project_tile" style="background-image: url(../img/cad_file2.jpg);">
             <p class="project_tile_title">Project 6</p>
           </div>
         </div>
