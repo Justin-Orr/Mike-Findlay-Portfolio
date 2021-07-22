@@ -8,6 +8,12 @@ body {
 
 /*CSS for the header content*/
 
+/* Remove border around bootstrap bottons after click */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .container-fluid {
     padding: 0em;
 }
